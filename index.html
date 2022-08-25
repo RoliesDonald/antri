@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <section class="hero is-medium is-primary">
+    <section class="hero is-medium is-primary has-bg-img">
       <div class="hero-body">
         <div class="container">
           <div class="columns">
             <div class="column is-8-desktop is-offset-2-desktop">
               <h1 class="title is-2 is-spaced">
-                Hello Bulma!
+                dadnadkjahdjahhakHello Bulma!
               </h1>
               <h2 class="subtitle is-4">
                   Congratulations! You're running the <strong>Bulma start</strong> project.
@@ -212,5 +212,14 @@
       </div>
     </footer>
     <script type="text/javascript" src="lib/main.js"></script>
+    <script>
+      $('.has-bg-img').each(function() {
+  var $img = $(this).find('img.is-bg-img').first();
+  if ($img) {
+    $(this).css('background-image', 'url(' + $img.attr('src') + ')');
+    $img.remove();
+  }
+});
+    </script>
   </body>
 </html>

@@ -27,3 +27,48 @@ $primary-invert: $pink-invert;
 */
 
 @import "../node_modules/bulma/bulma";
+html {
+    background-color: $warning;
+  }
+
+  .hero.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  .is-transparent {
+    opacity: 0.2;
+  }
+
+  .bg-img { 
+    background-image: url("../assets/gedung.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.img-responsive {
+  display: block; 
+  max-width: 100%;
+  height: auto;
+} 
+.section{
+  flex: 1;
+}
+
+.page-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+}
